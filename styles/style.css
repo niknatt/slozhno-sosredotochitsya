@@ -123,7 +123,7 @@
   color: var(--logo-color, #db00ff);
   font-size: var(--logo-font-size);
   line-height: 0.825;
-  text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
+  text-shadow: 4px 4px 0 var(--logo-shadow-color, #ff0070);
 }
 
 .header__paragraph {
@@ -231,7 +231,7 @@
   color: var(--logo-color, #db00ff);
   font-size: var(--logo-font-size);
   line-height: 0.825;
-  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
+  text-shadow: 2px 2px 0 var(--logo-shadow-color, #ff0070);
 }
 
 @media (width >= 768px) {
