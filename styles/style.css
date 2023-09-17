@@ -127,7 +127,7 @@
 }
 
 .header__paragraph {
-  font-weight: 700;
+  font-weight: var(--accent-font-weight, 700);
   line-height: var(--main-line-height, 1.3);
 }
 
@@ -182,7 +182,7 @@
 
 .text-block__subheading {
   margin-block-end: var(--main-gap, 10px);
-  font-weight: 400;
+  font-weight: var(--main-font-weight, 400);
 }
 
 .advices .text-block__heading {
@@ -195,6 +195,7 @@
 
 .text-block__paragraph {
   line-height: var(--main-line-height, 1.3);
+  margin-block-end: var(--main-gap, 10px);
 }
 
 .advices .text-block__paragraph:not(:last-of-type) {
@@ -213,9 +214,14 @@
 
 .grid__image {
   inline-size: 100%;
-}
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center;
+  }
 
 .footer {
+  block-size: 100vh;
+  min-block-size: 668px;
   position: relative;
   display: grid;
   place-items: center;
@@ -292,12 +298,6 @@
 
   .grid-heading {
     grid-column: 1 / -1;
-  }
-
-  .grid__image {
-    block-size: 100%;
-    object-fit: cover;
-    object-position: center;
   }
 
   .grid__image:first-of-type {

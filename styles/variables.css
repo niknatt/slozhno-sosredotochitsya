@@ -16,6 +16,8 @@
   --main-font-size: 18px;
   --logo-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --main-line-height: 1.3;
+  --main-font-weight: 400;
+  --accent-font-weight: 700;
 
   --main-gap: 10px;
 }
